@@ -10,7 +10,7 @@
 		<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
 
 		<!-- Use this data source name for JBoss AS -->
-		<jta-data-source>java:jboss/datasources/${artifactId}DS</jta-data-source>
+		<jta-data-source>java:jboss/datasources/defaultDS</jta-data-source>
 		<!-- Use this data source name for Glassfish -->
 		<!-- <jta-data-source>jdbc/__default</jta-data-source> -->
 		<properties>
