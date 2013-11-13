@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.otojunior.archetype</groupId>
-	<artifactId>jee6-app-simple</artifactId>
+	<artifactId>jee6-app-simple-archetype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
