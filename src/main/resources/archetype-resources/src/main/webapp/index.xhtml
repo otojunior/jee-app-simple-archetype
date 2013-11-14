@@ -4,8 +4,12 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
 	
-	<h:head>Initial Page - Page title</h:head>
+	<h:head>Test Application</h:head>
 	<body>
 		<h1>Application online!</h1>
+		<br/>
+		<h:form>
+			<h:commandButton action="#{sampleManagedBean.sampleAction}" value="Test" />
+		</h:form>
 	</body>	
 </html>
