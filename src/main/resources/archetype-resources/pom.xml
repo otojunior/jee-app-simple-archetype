@@ -112,4 +112,51 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+		<profile>
+			<id>glassfish-profile</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.glassfish</groupId>
+						<artifactId>maven-embedded-glassfish-plugin</artifactId>
+						<version>3.1</version>
+						<configuration>
+							<name>${project.build.finalName}</name>
+							<contextRoot>${project.build.finalName}</contextRoot>
+							<port>8080</port>
+							<autoDelete>true</autoDelete>
+						</configuration>
+						
+						<!-- 
+							Descomente as linhas abaixo para integrar o glassfish embarcado na fase de
+							instalação do Maven. Para rodar o servidor embarcado sem integração com o 
+							maven, utilize os comandos abaixo:
+							
+							mvn embedded-glassfish:run				(deploy + run)
+							mvn embedded-glassfish:deploy			(deploy)
+							mvn embedded-glassfish:undeploy			(undeploy)
+							mvn embedded-glassfish:start			(server start)
+							mvn embedded-glassfish:stop				(server stop)
+						-->
+						 
+						<executions>
+							<execution>
+								<phase>install</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+												
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	
 </project>
