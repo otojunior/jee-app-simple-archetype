@@ -9,7 +9,13 @@
 			<provider>org.hibernate.ejb.HibernatePersistence</provider>
 			<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		-->
-		<jta-data-source>java:jboss/datasources/defaultDS</jta-data-source>
+		
+		<!-- 
+			Para o Glassfish, usar JNDI para datasources no seguinte formato:
+			java:app/jdbc/<nome do datasource> 
+		-->
+		
+		<jta-data-source>jdbc/defaultDS</jta-data-source>
 		<properties>
 			<!--
 				<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
