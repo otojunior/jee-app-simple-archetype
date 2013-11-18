@@ -15,7 +15,7 @@
 			java:app/jdbc/<nome do datasource> 
 		-->
 		
-		<jta-data-source>jdbc/defaultDS</jta-data-source>
+		<jta-data-source>java:app/jdbc/customDS</jta-data-source>
 		<properties>
 			<!--
 				<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
