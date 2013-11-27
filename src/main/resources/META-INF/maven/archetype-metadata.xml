@@ -8,13 +8,13 @@
 		<fileSet filtered="true" packaged="true" encoding="UTF-8">
 			<directory>src/main/java</directory>
 			<includes>
-				<include>**/*.java</include>
+				<include>**/*</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" encoding="UTF-8">
 			<directory>src/main/resources</directory>
 			<includes>
-				<include>**/*.xml</include>
+				<include>**/*</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" encoding="UTF-8">
@@ -23,16 +23,16 @@
 				<include>**/*</include>
 			</includes>
 		</fileSet>
-		<fileSet encoding="UTF-8">
+		<fileSet filtered="true" packaged="true" encoding="UTF-8">
 			<directory>src/test/java</directory>
 			<includes>
-				<include>**/*.java</include>
+				<include>**/*</include>
 			</includes>
 		</fileSet>
 		<fileSet filtered="true" encoding="UTF-8">
 			<directory>src/test/resources</directory>
 			<includes>
-				<include>**/*.xml</include>
+				<include>**/*</include>
 			</includes>
 		</fileSet>
 	</fileSets>
