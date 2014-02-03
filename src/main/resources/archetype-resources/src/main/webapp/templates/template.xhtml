@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><ui:insert name="page_title">Título padrão da página (pode ser sobrescrito)</ui:insert></title>
+	
+	<link rel="stylesheet" type="text/css" href="../resources/css/view.css" media="all" />
+	<script type="text/javascript" src="../resources/js/view.js"></script>
+	<script type="text/javascript" src="../resources/js/calendar.js"></script>
+	
+</h:head>
+
+<h:body id="main_body">
+
+	<img id="top" src="../resources/gfx/top.png"/>
+
+	<h:panelGroup id="form_container" layout="block">
+		<h1><a>&nbsp;</a></h1>
+		<h:panelGroup layout="block" styleClass="appnitro">
+			
+			<h:panelGroup styleClass="form_description">
+				<h2>
+					<ui:insert name="panel_title">
+						<ui:include src="defaults/default_panel_title.xhtml"/>
+					</ui:insert>
+				</h2>
+				<p>
+					<ui:insert name="panel_description">
+						<ui:include src="defaults/default_panel_description.xhtml"/>
+					</ui:insert>
+				</p>
+			</h:panelGroup>
+			
+			<!-- Corpo -->
+			<ui:define name="corpo"/>
+		</h:panelGroup>
+		
+		<!--  Rodapé -->
+		<h:panelGroup id="footer" layout="block">
+			<ui:insert name="page_footer">
+				<ui:include src="defaults/default_footer.xhtml"/>
+			</ui:insert>
+		</h:panelGroup>
+	</h:panelGroup>
+
+	<img id="bottom" src="../resources/gfx/bottom.png"/>
+</h:body>
+</html>

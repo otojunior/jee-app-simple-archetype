@@ -8,31 +8,46 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><ui:insert name="page_title">Título padrão da página (pode ser sobrescrito)</ui:insert></title>
 	
-	<link rel="stylesheet" type="text/css" href="resources/css/view.css" media="all" />
-	<script type="text/javascript" src="resources/js/view.js"></script>
-	<script type="text/javascript" src="resources/js/calendar.js"></script>
+	<link rel="stylesheet" type="text/css" href="../resources/css/view.css" media="all" />
+	<script type="text/javascript" src="../resources/js/view.js"></script>
+	<script type="text/javascript" src="../resources/js/calendar.js"></script>
+	
 </h:head>
 
 <h:body id="main_body">
 
-	<img id="top" src="resources/gfx/top.png"/>
+	<img id="top" src="../resources/gfx/top.png"/>
 
 	<h:panelGroup id="form_container" layout="block">
 		<h1><a>&nbsp;</a></h1>
 		<h:form styleClass="appnitro">
 			<h:panelGroup styleClass="form_description" layout="block">
-				<h2>Aplicação de Exemplo ONLINE</h2>
-				<p>Esta é uma aplicação de exemplo gerada por arquétipo Maven</p>
+				<h2>
+					<ui:insert name="form_title">
+						<ui:include src="defaults/default_form_title.xhtml"/>
+					</ui:insert>
+				</h2>
+				<p>
+					<ui:insert name="form_description">
+						<ui:include src="defaults/default_form_description.xhtml"/>
+					</ui:insert>
+				</p>
 			</h:panelGroup>
 			
+			<!-- Componentes -->
+			<ul>
+				<ui:insert name="componentes"/>
+			</ul>
 		</h:form>
 
 		<!-- Rodapé -->
 		<h:panelGroup id="footer" layout="block">
-			Oto Junior :: 2014 - Gerado pelo Archetype jee6-app-simple-archetype
+			<ui:insert name="page_footer">
+				<ui:include src="defaults/default_footer.xhtml"/>
+			</ui:insert>
 		</h:panelGroup>
 	</h:panelGroup>
 
-	<img id="bottom" src="resources/gfx/bottom.png"/>
+	<img id="bottom" src="../resources/gfx/bottom.png"/>
 </h:body>
 </html>
