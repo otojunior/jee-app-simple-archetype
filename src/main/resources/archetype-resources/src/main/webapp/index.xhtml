@@ -4,9 +4,9 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets">
 	
-	<ui:composition template="#{contextRoot}/templates/template_form.xhtml">
-		<ui:define name="page_title">Aplicação ONLINE!</ui:define>
-		<ui:define name="form_title">Aplicação de Exemplo ONLINE!</ui:define>
+	<ui:composition template="/templates/template_form.xhtml">
+		<ui:define name="page_title">Aplicação ${artifactId} ONLINE!</ui:define>
+		<ui:define name="form_title">Aplicação ${artifactId} ONLINE!</ui:define>
 		<ui:define name="form_description">Esta é uma aplicação de exemplo gerada por arquétipo Maven</ui:define>
 	</ui:composition>
 	
