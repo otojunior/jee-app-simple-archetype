@@ -22,6 +22,19 @@
 			<includes>
 				<include>**/*</include>
 			</includes>
+			<excludes>
+				<exclude>**/*.gif</exclude>
+				<exclude>**/*.png</exclude>
+				<exclude>**/*.jpg</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet filtered="false" encoding="UTF-8">
+			<directory>src/main/webapp</directory>
+			<includes>
+				<include>**/*.gif</include>
+				<include>**/*.png</include>
+				<include>**/*.jpg</include>
+			</includes>
 		</fileSet>
 		<fileSet filtered="true" packaged="true" encoding="UTF-8">
 			<directory>src/test/java</directory>

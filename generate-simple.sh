@@ -13,5 +13,6 @@ mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype \
 -DartifactId=$1 \
 -Dversion=0.0.1-SNAPSHOT \
 -Dpackage=org.otojunior.$1 \
+-Dmaven.test.skip=true \
 -B $2
   
