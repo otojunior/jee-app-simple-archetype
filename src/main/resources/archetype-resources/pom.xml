@@ -158,7 +158,7 @@
 					<plugin>
 						<groupId>org.glassfish</groupId>
 						<artifactId>maven-embedded-glassfish-plugin</artifactId>
-						<version>3.1</version>
+						<version>3.1.1</version>
 						<configuration>
 							<name>${project.build.finalName}</name>
 							<contextRoot>${project.build.finalName}</contextRoot>
@@ -192,6 +192,12 @@
 							    <groupId>com.h2database</groupId>
 							    <artifactId>h2</artifactId>
 							    <version>1.3.174</version>
+							</dependency>
+							
+							<dependency>
+								<groupId>org.osgi</groupId>
+								<artifactId>org.osgi.core</artifactId>
+								<version>4.3.1</version>
 							</dependency>
 						</dependencies>
 						
