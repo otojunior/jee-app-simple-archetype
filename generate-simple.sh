@@ -8,11 +8,10 @@
 #
 mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype \
 -DarchetypeArtifactId=jee6-app-simple-archetype \
--DarchetypeVersion=$2 \
+-DarchetypeVersion=1.1-SNAPSHOT \
 -DgroupId=org.otojunior \
 -DartifactId=$1 \
 -Dversion=1.0-SNAPSHOT \
 -Dpackage=org.otojunior.$1 \
 -Dmaven.test.skip=true \
--B $3
-  
+-B $2
