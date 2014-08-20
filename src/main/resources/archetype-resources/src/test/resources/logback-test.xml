@@ -1,11 +1,16 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
 <configuration>
+	<property name="defaultMsgPattern" value="[%d{dd/MM/yyyy HH:mm:ss.SSS} %t] %-5p %c{36}: %m%n"/>
+
 	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-			<level>WARN</level>
+			<level>DEBUG</level>
 		</filter>
-		<file>${rootArtifactId}-jar.log</file>
+		<file>${artifactId}-test.log</file>
 		<encoder>
-			<pattern>%date %-5level %logger{36} - %msg%n</pattern>
+			<pattern>${defaultMsgPattern}</pattern>
 		</encoder>
 	</appender>
 
@@ -14,7 +19,7 @@
 			<level>INFO</level>
 		</filter>
 		<encoder>
-			<pattern>%date %-5level %logger{36} - %msg%n</pattern>
+			<pattern>${defaultMsgPattern}</pattern>
 		</encoder>
 	</appender>
 
