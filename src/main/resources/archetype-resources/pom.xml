@@ -20,11 +20,11 @@
 		<plugin.version.maven-source-plugin>2.2.1</plugin.version.maven-source-plugin>
 		<plugin.version.maven-javadoc-plugin>2.9.1</plugin.version.maven-javadoc-plugin>
 		<plugin.version.maven-surefire-plugin>2.16</plugin.version.maven-surefire-plugin>
-		<dependency.version.logback>1.0.13</dependency.version.logback>
-		<dependency.version.slf4j>1.7.5</dependency.version.slf4j>
-		<dependency.version.commons-lang3>3.2.1</dependency.version.commons-lang3>
+		<dependency.version.logback>1.1.2</dependency.version.logback>
+		<dependency.version.slf4j>1.7.6</dependency.version.slf4j>
+		<dependency.version.commons-lang3>3.3.2</dependency.version.commons-lang3>
 		<dependency.version.commons-collections4>4.0</dependency.version.commons-collections4>
-		<dependency.version.jquery>2.1.0-2</dependency.version.jquery>
+		<dependency.version.jquery>2.1.1</dependency.version.jquery>
 		<dependency.version.javaee-api>6.0</dependency.version.javaee-api>
 		<dependency.version.junit>4.11</dependency.version.junit>
 		<dependency.version.easymock>3.2</dependency.version.easymock>

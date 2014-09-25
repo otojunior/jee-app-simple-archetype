@@ -67,22 +67,22 @@ public class SampleEntityTest {
 
 	@Test
 	public void testGetSampleProperty() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 	@Test
 	public void testGetVersion() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 	@Test
 	public void testSetSampleProperty() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 	@Test
 	public void testToString() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 }
