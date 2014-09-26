@@ -4,3 +4,4 @@ target/
 .project
 *~
 Thumbs.db
+*.log
