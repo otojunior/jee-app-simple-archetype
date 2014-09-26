@@ -46,11 +46,9 @@ public class SampleEntityTest {
 
 	@Test
 	public void testEqualsObject() {
-		Whitebox.setInternalState(entity, "id", Long.valueOf(1L));
-		
 		SampleEntity other = new SampleEntity();
+		Whitebox.setInternalState(entity, "id", Long.valueOf(1L));
 		Whitebox.setInternalState(other, "id", Long.valueOf(1L));
-		
 		assertTrue(entity.equals(other));
 	}
 	
@@ -67,22 +65,26 @@ public class SampleEntityTest {
 
 	@Test
 	public void testGetSampleProperty() {
-		//fail("Not yet implemented");
+		entity.setSampleProperty("aTestValue");
+		assertEquals(new String("aTestValue"), entity.getSampleProperty());
 	}
 
 	@Test
 	public void testGetVersion() {
-		//fail("Not yet implemented");
+		Whitebox.setInternalState(entity, "version", 123L);
+		assertEquals(Long.valueOf(123L), entity.getVersion());
 	}
 
 	@Test
 	public void testSetSampleProperty() {
-		//fail("Not yet implemented");
+		entity.setSampleProperty("aValue");
 	}
 
 	@Test
 	public void testToString() {
-		//fail("Not yet implemented");
+		Whitebox.setInternalState(entity, "id", 1L);
+		Whitebox.setInternalState(entity, "version", 2L);
+		entity.setSampleProperty("aValue");
+		assertEquals("SampleEntity[id=1,version=2,sampleProperty=aValue]", entity.toString());
 	}
-
 }
