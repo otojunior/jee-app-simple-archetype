@@ -4,6 +4,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.PrePersist;
 import javax.persistence.Transient;
 import javax.persistence.Version;
@@ -17,10 +19,21 @@ import org.apache.commons.codec.digest.DigestUtils;
  * @author <Author name>
  */
 @Entity
+@NamedQueries({ 
+	@NamedQuery(
+		name = User.QUERY_FIND_ALL, 
+		query = "select u from User u"),
+	@NamedQuery(
+		name = User.QUERY_FIND_BY_LOGIN, 
+		query = "select u from User u where u.login = :_login")
+})
 public class User {
 	private static final int COL_LENGTH_NAME = 50;
 	private static final int COL_LENGTH_LOGIN = 10;
 	private static final int COL_LENGTH_SHA1PWD = 40;
+	
+	public static final String QUERY_FIND_ALL = "user.query.findAll";
+	public static final String QUERY_FIND_BY_LOGIN = "user.query.findByLogin";
 	
 	/**
 	 * Unique identification (Primary Key).
