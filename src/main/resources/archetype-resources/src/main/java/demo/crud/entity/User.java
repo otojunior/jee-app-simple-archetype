@@ -13,6 +13,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * User Entity - Example entity to demonstrate the archetype.
@@ -49,14 +51,14 @@ public class User {
 	private Long version;
 	
 	@NotNull
-	@Column(length=COL_LENGTH_NAME)
+	@Column(length=COL_LENGTH_NAME, nullable=false)
 	private String name;
 	
 	/**
 	 * Login name.
 	 */
 	@NotNull
-	@Column(length=COL_LENGTH_LOGIN)
+	@Column(length=COL_LENGTH_LOGIN, nullable=false)
 	private String login;
 	
 	/**
@@ -190,5 +192,13 @@ public class User {
 	 */
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
 	}
 }

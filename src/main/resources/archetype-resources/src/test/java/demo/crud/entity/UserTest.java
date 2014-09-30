@@ -174,4 +174,19 @@ public class UserTest {
 		user.prePersist();
 		assertNull(user.getSha1Password());
 	}
+	
+	/**
+	 * Test the toString method.
+	 */
+	@Test
+	public void testToString() {
+		user.setLogin("logintest");
+		user.setName("Name Test");
+		user.setPassword("testpwd");
+		Whitebox.setInternalState(user, "id", Long.valueOf(1L));
+		Whitebox.setInternalState(user, "version", Long.valueOf(0L));
+		assertEquals(
+			"User[id=1,version=0,name=Name Test,login=logintest,sha1Password=<null>,password=testpwd]",
+			user.toString());
+	}
 }

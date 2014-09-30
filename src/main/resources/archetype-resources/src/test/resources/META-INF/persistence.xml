@@ -5,8 +5,6 @@
 	version="2.0">
 
 	<persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
-		<class>${package}.demo.crud.entity.User</class>
-		
 		<!--
 			******************************************************************************
 			Persistence provider for persistence layer (DAOs) unit tests.
@@ -19,6 +17,8 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		-->
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+		<class>${package}.demo.crud.entity.User</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
