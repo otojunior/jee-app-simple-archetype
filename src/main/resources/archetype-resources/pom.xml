@@ -52,7 +52,7 @@
 		</repository>
 	</distributionManagement>
 	-->
-
+	
 	<repositories>
 		<repository>
 			<id>repository.jboss.org</id>
@@ -60,7 +60,7 @@
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
-
+	
 	<pluginRepositories>
 		<pluginRepository>
 			<id>repository.jboss.org</id>
@@ -143,7 +143,7 @@
 		    <version>${dependency.version.h2}</version>
 		    <scope>test</scope>
 		</dependency>
-		
+				
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -180,8 +180,6 @@
 			<version>${dependency.version.javaee-api}</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		
 	</dependencies>
 
 	<build>
