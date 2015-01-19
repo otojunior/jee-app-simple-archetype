@@ -14,7 +14,7 @@ import ${package}.demo.crud.entity.User;
  * Obs.:This DAO class may have an ancestor generic DAO class with parametrized entity.
  * (not showed here in this example).
  * 
- * @author <Author name>
+ * @author [Author name]
  */
 public class UserDao {
 	/**

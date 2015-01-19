@@ -18,7 +18,7 @@ import org.powermock.reflect.Whitebox;
 
 /**
  * User DAO Test.
- * @author <Author name>
+ * @author [Author name]
  */
 public class UserDaoTest {
 	private static EntityManagerFactory factory;

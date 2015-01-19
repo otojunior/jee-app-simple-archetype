@@ -9,7 +9,7 @@ import org.powermock.reflect.Whitebox;
 
 /**
  * User test class.
- * @author <Author name>
+ * @author [Author name]
  */
 public class UserTest {
 	/**

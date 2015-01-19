@@ -18,7 +18,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * User Entity - Example entity to demonstrate the archetype.
- * @author <Author name>
+ * @author [Author name]
  */
 @Entity
 @NamedQueries({ 
