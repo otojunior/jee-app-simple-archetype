@@ -46,18 +46,18 @@
 	<scm>
 		<developerConnection>scm:git:[Git Repo URL]</developerConnection>
 	</scm>
-
+	-->
+	
 	<distributionManagement>
 		<snapshotRepository>
-			<id>[Maven Snapshot Repo ID]</id>
-			<url>[Maven Snapshot Repo URL]</url>
+			<id>mvnrepo-snapshot-${artifactId}</id>
+			<url>file://${project.build.directory}/mvn-repo/snapshot</url>
 		</snapshotRepository>
 		<repository>
-			<id>[Maven Release Repo ID]</id>
-			<url>[Maven Release Repo URL]</url>
+			<id>mvnrepo-release-${artifactId}</id>
+			<url>file://${project.build.directory}/mvn-repo/release</url>
 		</repository>
 	</distributionManagement>
-	-->
 	
 	<repositories>
 		<repository>
