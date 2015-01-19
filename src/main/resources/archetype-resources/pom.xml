@@ -9,7 +9,13 @@
 	<version>${version}</version>
 	<packaging>war</packaging>
 
-	<name>${artifactId}: WAR Module</name>
+	<name>Project ${artifactId}</name>
+	<url>http://www.${groupId}/${artifactId}</url>
+	
+	<organization>
+		<name>Organization ${groupId}</name>
+		<url>http://www.${groupId}</url>
+	</organization>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -201,6 +207,12 @@
 				<version>${plugin.version.maven-war-plugin}</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 
