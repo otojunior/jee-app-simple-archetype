@@ -58,11 +58,11 @@
 	
 	<distributionManagement>
 		<snapshotRepository>
-			<id>mvnrepo-snapshot-${artifactId}</id>
+			<id>mvnrepo-snapshot-${project.artifactId}</id>
 			<url>file://${project.build.directory}/mvn-repo/snapshot</url>
 		</snapshotRepository>
 		<repository>
-			<id>mvnrepo-release-${artifactId}</id>
+			<id>mvnrepo-release-${project.artifactId}</id>
 			<url>file://${project.build.directory}/mvn-repo/release</url>
 		</repository>
 	</distributionManagement>
