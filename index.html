@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Jee6-app-simple-archetype by otojunior</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/otojunior/jee6-app-simple-archetype">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Jee6-app-simple-archetype</h1>
+            <h2>JEE 6 Simple Archetype</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/otojunior/jee6-app-simple-archetype/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/otojunior/jee6-app-simple-archetype/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="jee-6-simple-one-project-archetype" class="anchor" href="#jee-6-simple-one-project-archetype" aria-hidden="true"><span class="octicon octicon-link"></span></a>JEE 6 Simple (One Project) Archetype</h1>
+
+<p><a href="https://travis-ci.org/otojunior/jee6-app-simple-archetype"><img src="https://travis-ci.org/otojunior/jee6-app-simple-archetype.svg?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a id="1-archetype-instalation-and-use" class="anchor" href="#1-archetype-instalation-and-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Archetype Instalation and Use</h2>
+
+<p><strong>Pre-Requisites:</strong></p>
+
+<ul>
+<li>JDK 6+</li>
+<li>Maven (3.x+)</li>
+<li>Git</li>
+</ul>
+
+<p><strong>Install Steps:</strong></p>
+
+<ol>
+<li>Download the archetype.</li>
+<li>Install the archetype: mvn clean install</li>
+</ol>
+
+<p><strong>Use Steps:</strong></p>
+
+<ol>
+<li>Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=jee6-app-simple-archetype -DarchetypeVersion=  -DgroupId= -DartifactId= -Dversion= -Dpackage= -Dmaven.test.skip=true -B</li>
+</ol>
+
+<p>Parameters:</p>
+
+<ul>
+<li>archetypeGroupId: MUST BE org.otojunior.archetype</li>
+<li>archetypeArtifactId: MUST BE jee6-app-simple</li>
+<li>archetypeVersion: Archetype version to use to creation.</li>
+<li>groupId: Your company domain in Iava convention. Ex.: com.acme</li>
+<li>artifactId: Your project name. Ex.: sampleproject</li>
+<li>version: Your first project version. Recommendation: 1.0-SNAPSHOT</li>
+<li>package: Default package of your application.</li>
+</ul>
+
+<p>Obs.: In root archetype folder, there is a script to help this creation. Edit the script and put it into another folder. Ex.: the your root projects folder.</p>
+
+<h2>
+<a id="2-logs-framework-configuration" class="anchor" href="#2-logs-framework-configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Logs Framework Configuration</h2>
+
+<p>Log Framework: SLF4J (API) and Logback (Implementation). Supports many log appenders (destiny of messages): console, file, databases, etc. For logs in databases (DBAppender), the tables must be created first by scripts in:</p>
+
+<ul>
+<li><a href="https://github.com/qos-ch/logback/tree/v_1.1.1/logback-classic/src/main/java/ch/qos/logback/classic/db/script">Logback Scripts</a></li>
+</ul>
+
+<p>The JDBC drivers can be found in:</p>
+
+<ul>
+<li><a href="http://search.maven.org">Maven Repository</a></li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/otojunior">otojunior</a> can be found on <a href="https://github.com/otojunior/jee6-app-simple-archetype">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
