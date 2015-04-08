@@ -1,6 +1,8 @@
 JEE 6 Simple (One Project) Archetype
 ====================================
 
+[![Build Status](https://travis-ci.org/otojunior/jee6-app-simple-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee6-app-simple-archetype)
+
 1. Archetype Instalation and Use
 --------------------------------
 
