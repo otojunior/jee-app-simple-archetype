@@ -19,7 +19,7 @@
 
 	<groupId>org.otojunior.archetype</groupId>
 	<artifactId>jee6-app-simple-archetype</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.3</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -37,7 +37,7 @@
 	
 	<scm>
 		<developerConnection>scm:git:git@github.com:otojunior/jee6-app-simple-archetype.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v1.3</tag>
 	</scm>
 
 	<distributionManagement>
