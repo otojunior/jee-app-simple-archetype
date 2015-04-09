@@ -14,7 +14,7 @@
 			Uncomment the Hibernate provider for use Hibernate. Implementation also must 
 			be selected in project POM (JBoss/Hibernate or Glassfish).
 			******************************************************************************
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		-->
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
