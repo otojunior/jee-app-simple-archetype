@@ -5,19 +5,6 @@
 	version="2.0">
 
 	<persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
-		<!--
-			******************************************************************************
-			Persistence provider for persistence layer (DAOs) unit tests.
-			This archetype supports Hibernate (JBoss default) and 
-			EclipseLink (Glassfish default) implementation.
-			This configuration is Glassfish enabled by default (Reference implementation).
-			Uncomment the Hibernate provider for use Hibernate. Implementation also must 
-			be selected in project POM (JBoss/Hibernate or Glassfish).
-			******************************************************************************
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		-->
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-
 		<class>${package}.demo.crud.entity.User</class>
 		
 		<properties>

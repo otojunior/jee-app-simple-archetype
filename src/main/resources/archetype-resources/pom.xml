@@ -91,39 +91,12 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!--
-			******************************************************************************
-			Persistence dependency for persistence layer (DAOs) unit tests.
-			This archetype supports Hibernate (JBoss default) and 
-			EclipseLink (Glassfish default) implementation.
-			This configuration is EclipseLink enabled by default (Reference implementation).
-			Uncomment the JBoss/Hibernate dependency and comment EclipseLink dependency for 
-			use Hibernate. Provider also must be selected in test/persistence.xml
-			******************************************************************************
-		-->
-		
-		<dependency>
-		    <groupId>org.eclipse.persistence</groupId>
-		    <artifactId>org.eclipse.persistence.jpa</artifactId>
-		    <version>${dependency.version.eclipselink}</version>
-		    <scope>test</scope>
-		</dependency>
-		
-		<!-- 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${dependency.version.hibernate}</version>
-			<scope>test</scope>
-		</dependency> 
-		
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		    <version>${dependency.version.hibernate.validator}</version>
 		    <scope>test</scope>
 		</dependency>
-		-->
 
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -188,13 +161,6 @@
 		    <groupId>org.webjars</groupId>
 		    <artifactId>jquery</artifactId>
 		    <version>${dependency.version.jquery}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>${dependency.version.javaee-api}</version>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
@@ -303,6 +269,33 @@
 	
 	<profiles>
 		<profile>
+			<id>eclipselink-tests-profile</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+				    <groupId>org.eclipse.persistence</groupId>
+				    <artifactId>org.eclipse.persistence.jpa</artifactId>
+				    <version>${dependency.version.eclipselink}</version>
+				    <scope>test</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+		
+		<profile>
+			<id>hibernate-tests-profile</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate-entitymanager</artifactId>
+					<version>${dependency.version.hibernate}</version>
+					<scope>test</scope>
+				</dependency> 
+			</dependencies>
+		</profile>
+	
+		<profile>
 			<id>glassfish-profile</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -364,6 +357,15 @@
 					</plugin>
 				</plugins>
 			</build>
+			
+			<dependencies>
+				<dependency>
+					<groupId>javax</groupId>
+					<artifactId>javaee-api</artifactId>
+					<version>${dependency.version.javaee-api}</version>
+					<scope>provided</scope>
+				</dependency>
+			</dependencies>
 		</profile>
 		
 		<profile>
@@ -390,6 +392,15 @@
 		            </plugin>
 				</plugins>
 			</build>
+			
+			<dependencies>
+				<dependency>
+					<groupId>javax</groupId>
+					<artifactId>javaee-api</artifactId>
+					<version>${dependency.version.javaee-api}</version>
+					<scope>provided</scope>
+				</dependency>
+			</dependencies>
 		</profile>
 	</profiles>
 </project>
