@@ -319,19 +319,13 @@
 							<port>${config.maven-embedded-glassfish-plugin.port}</port>
 							<autoDelete>true</autoDelete>
 						</configuration>
-						
 						<!-- 
-							Descomente as linhas abaixo para integrar o glassfish embarcado na fase de
-							instalação do Maven. Para rodar o servidor embarcado sem integração com o 
-							maven, utilize os comandos abaixo:
-							
-							mvn embedded-glassfish:run				(deploy + run)
-							mvn embedded-glassfish:deploy			(deploy)
-							mvn embedded-glassfish:undeploy			(undeploy)
-							mvn embedded-glassfish:start			(server start)
-							mvn embedded-glassfish:stop				(server stop)
+							mvn embedded-glassfish:run			(deploy + run)
+							mvn embedded-glassfish:deploy		(deploy)
+							mvn embedded-glassfish:undeploy		(undeploy)
+							mvn embedded-glassfish:start		(server start)
+							mvn embedded-glassfish:stop			(server stop)
 						-->
-						 
 						<executions>
 							<execution>
 								<phase>deploy</phase>
