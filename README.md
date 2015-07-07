@@ -55,3 +55,8 @@ Log Framework: SLF4J (API) and Logback (Implementation). Supports many log appen
 
 The JDBC drivers can be found in:
 * [Maven Repository](http://search.maven.org)
+
+3. Datasources Configuration
+----------------------------
+
+* [JBoss 7 Datasources Configurations](http://www.ironjacamar.org/doc/userguide/1.0/en-US/html/ex_datasources.html)
