@@ -13,10 +13,10 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  -->
-JEE 6 Simple (One Project) Archetype
+JEE Simple (One Project) Archetype
 ====================================
 
-[![Build Status](https://travis-ci.org/otojunior/jee6-app-simple-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee6-app-simple-archetype)
+[![Build Status](https://travis-ci.org/otojunior/jee-app-simple-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-simple-archetype)
 
 1. Archetype Instalation and Use
 --------------------------------
@@ -34,11 +34,11 @@ JEE 6 Simple (One Project) Archetype
 
 **Use Steps:**
 
-1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=jee6-app-simple-archetype -DarchetypeVersion=<archetype version>  -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
+1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=jee-app-simple-archetype -DarchetypeVersion=<archetype version>  -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
 
 Parameters:
 * archetypeGroupId: MUST BE org.otojunior.archetype
-* archetypeArtifactId: MUST BE jee6-app-simple
+* archetypeArtifactId: MUST BE jee-app-simple
 * archetypeVersion: Archetype version to use to creation.
 * groupId: Your company domain in Iava convention. Ex.: com.acme
 * artifactId: Your project name. Ex.: sampleproject

@@ -21,7 +21,7 @@
 # OBS: MOVER ESTE SCRIPT PARA A PASTA RAIZ DOS PROJETOS.
 #
 mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype \
--DarchetypeArtifactId=jee6-app-simple-archetype \
+-DarchetypeArtifactId=jee-app-simple-archetype \
 -DarchetypeVersion=1.3 \
 -DgroupId=org.otojunior \
 -DartifactId=$1 \

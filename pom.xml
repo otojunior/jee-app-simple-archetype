@@ -18,7 +18,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.otojunior.archetype</groupId>
-	<artifactId>jee6-app-simple-archetype</artifactId>
+	<artifactId>jee-app-simple-archetype</artifactId>
 	<version>1.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -36,8 +36,8 @@
 	</properties>
 	
 	<scm>
-		<connection>scm:git:https://github.com/otojunior/jee6-app-simple-archetype.git</connection>
-		<developerConnection>scm:git:git@github.com:otojunior/jee6-app-simple-archetype.git</developerConnection>
+		<connection>scm:git:https://github.com/otojunior/jee-app-simple-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:otojunior/jee-app-simple-archetype.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
