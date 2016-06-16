@@ -31,7 +31,7 @@
 		<plugin.version.java>1.8</plugin.version.java>
 		<plugin.version.buildnumber-maven-plugin>1.4</plugin.version.buildnumber-maven-plugin>
 		<plugin.version.maven-compiler-plugin>3.5.1</plugin.version.maven-compiler-plugin>
-		<plugin.version.maven-jar-plugin>3.0.1</plugin.version.maven-jar-plugin>
+		<plugin.version.maven-jar-plugin>2.6</plugin.version.maven-jar-plugin>
 		<plugin.version.maven-release-plugin>2.5.3</plugin.version.maven-release-plugin>
 		<plugin.version.maven-source-plugin>3.0.0</plugin.version.maven-source-plugin>
 		<plugin.version.maven-javadoc-plugin>2.10.4</plugin.version.maven-javadoc-plugin>
