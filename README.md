@@ -60,3 +60,8 @@ The JDBC drivers can be found in:
 ----------------------------
 
 * [JBoss 7 Datasources Configurations](http://www.ironjacamar.org/doc/userguide/1.0/en-US/html/ex_datasources.html)
+
+4. Descritores de Deployment JEE 7
+----------------------------------
+
+* [Descritores de Deployment da JEE 7](https://dzone.com/articles/java-ee-7-deployment)
