@@ -61,7 +61,12 @@ The JDBC drivers can be found in:
 
 * [JBoss 7 Datasources Configurations](http://www.ironjacamar.org/doc/userguide/1.0/en-US/html/ex_datasources.html)
 
-4. Descritores de Deployment JEE 7
+4. Deployment Descriptors JEE 7
 ----------------------------------
 
-* [Descritores de Deployment da JEE 7](https://dzone.com/articles/java-ee-7-deployment)
+* [Deployment Descriptors JEE 7](https://dzone.com/articles/java-ee-7-deployment)
+
+5. Observations
+---------------
+
+* Remember to update the <h:outputScript library="webjars" name="jquery/3.0.0/jquery.min.js" /> tag of the template.xhtml when update de jquery version in POM.

@@ -35,7 +35,6 @@
 		<dependency.version.commons-lang3>3.4</dependency.version.commons-lang3>
 		<dependency.version.commons-collections4>4.1</dependency.version.commons-collections4>
 		<dependency.version.commons-codec>1.10</dependency.version.commons-codec>
-		<dependency.version.jquery>3.0.0</dependency.version.jquery>
 		<dependency.version.javaee-api>7.0</dependency.version.javaee-api>
 		<plugin.version.java>1.8</plugin.version.java>
 		<plugin.version.buildnumber-maven-plugin>1.4</plugin.version.buildnumber-maven-plugin>
@@ -46,6 +45,12 @@
 		<plugin.version.maven-javadoc-plugin>2.10.4</plugin.version.maven-javadoc-plugin>
 		<plugin.version.maven-surefire-plugin>2.19.1</plugin.version.maven-surefire-plugin>
 		<plugin.version.sonar-maven3-plugin>5.1</plugin.version.sonar-maven3-plugin>
+		
+		<!--
+			Remember to upate de tag below in template.xhtml when update jquery dependency.  
+			<h:outputScript library="webjars" name="jquery/3.0.0/jquery.min.js" />
+		-->
+		<dependency.version.jquery>3.0.0</dependency.version.jquery>
 	</properties>
 
 	<!-- 
