@@ -17,6 +17,8 @@ JEE Simple (One Project) Archetype
 ====================================
 
 [![Build Status](https://travis-ci.org/otojunior/jee-app-simple-archetype.svg?branch=master)](https://travis-ci.org/otojunior/jee-app-simple-archetype)
+[![Coverage Status](https://coveralls.io/repos/github/otojunior/jee-app-simple-archetype/badge.svg?branch=jee7)](https://coveralls.io/github/otojunior/jee-app-simple-archetype?branch=jee7)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/24c97a1da7f14bc5898b9652b643a1bd)](https://www.codacy.com/app/otojunior/jee-app-simple-archetype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=otojunior/jee-app-simple-archetype&amp;utm_campaign=Badge_Grade)
 
 1. Archetype Instalation and Use
 --------------------------------
@@ -70,3 +72,43 @@ The JDBC drivers can be found in:
 ---------------
 
 * Remember to update the <h:outputScript library="webjars" name="jquery/3.0.0/jquery.min.js" /> tag of the template.xhtml when update de jquery version in POM.
+
+6. Coveralls and Codacy Integration
+-----------------------------------
+
+```xml
+<plugin>
+	<groupId>org.eluder.coveralls</groupId>
+	<artifactId>coveralls-maven-plugin</artifactId>
+	<version>4.3.0</version>
+</plugin>
+
+<plugin>
+	<groupId>com.gavinmogan</groupId>
+    <artifactId>codacy-maven-plugin</artifactId>
+    <version>1.0.3</version>
+    <executions>
+    	<execution>
+    		<goals>
+    			<goal>coverage</goal>
+    		</goals>
+    		<configuration>
+		    	<coverageReportFile>target/site/jacoco/jacoco.xml</coverageReportFile>
+		    	<projectToken>4f56fb080b83441494c31f1180164d25</projectToken>
+		    	<apiToken>4f56fb080b83441494c31f1180164d25</apiToken>
+    		</configuration>
+    	</execution>
+    </executions>
+</plugin>
+
+```
+**projectToken** e **apiToken** got from Codacy project.
+
+Add follow lines in **.travis.yml**:
+
+```
+install: true
+script:  mvn clean test jacoco:report
+after_success:
+  - mvn coveralls:report
+```
