@@ -101,6 +101,12 @@
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${dependency.version.hibernate}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${dependency.version.hibernate.validator}</version>
             <scope>test</scope>
@@ -135,12 +141,6 @@
             <version>${dependency.version.h2}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>${dependency.version.hibernate}</version>
-            <scope>test</scope>
-        </dependency> 
 
         <dependency>
             <groupId>org.slf4j</groupId>
